@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hour_navigation"
+    app:startDestination="@id/hourFragment">
+
+    <fragment
+        android:id="@+id/hourFragment"
+        android:name="com.capgemini.myweatherapp.HourFragment"
+        android:label="fragment_hour_list"
+        tools:layout="@layout/fragment_hour_list" >
+        <action
+            android:id="@+id/action_hourFragment_to_weatherDetailsFragment2"
+            app:destination="@id/weatherDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherDetailsFragment2"
+        android:name="com.capgemini.myweatherapp.WeatherDetailsFragment"
+        android:label="fragment_weather_details"
+        tools:layout="@layout/fragment_weather_details" />
+</navigation>
